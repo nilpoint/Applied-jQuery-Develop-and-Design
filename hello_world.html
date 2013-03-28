@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<title>Hello World - jQuery Style</title>
+		<script type="text/javascript" src="jquery-1.6.4.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function(){
+        $('#first').html('<h1>Hello World!</h1>');
+        $('#link').click(function(){
+          $('#greeting').html('<h1>Hello Again!</h1>');
+        });
+      });
+		</script>
+	</head>
+  <body>
+    <div id="first"></div>
+    <div id="second">
+      <a href="#" id="link">Click Me!</a><br />
+      <span id="greeting"></span>
+    </div>
+  </body>
+</html>
